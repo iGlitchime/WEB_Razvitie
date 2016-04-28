@@ -1,0 +1,834 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("MyriadPro.otf");
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "MyriadPro";
+}
+.header {
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    left: 0;
+    background-color: white;
+    height: 88px;
+    width: 100%;
+    line-height: 88px;
+}
+.headerContent {
+    width: 996px;
+    height: inherit;
+    margin: 0px auto;
+    position: relative;
+}
+.logo {
+    float: left;
+    margin: auto 0;
+    text-align: left;
+    position: relative;
+    width: 160px;
+    height: inherit;
+    line-height: inherit;
+    background-image: url('img/header/Logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main-menu {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: inherit;
+    line-height: inherit;
+    white-space: nowrap;
+    float: left;
+}
+.menulinks {
+    display: inline;
+    float: left;
+    margin-right: 18px;
+    font-size: 12px;
+    color: rgb(88, 70, 81);
+    text-transform: uppercase;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: rgb(88, 70, 81);
+}
+a.active, a:hover  {
+    color: rgb(201, 56, 50);
+    text-decoration: none;
+}
+.phone {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: inherit;
+    float: left;
+}
+.phone img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 24px;
+}
+.number {
+    top: -4px;
+    margin-left: 44px;
+    position: relative;
+    height: inherit;
+    font-size: 26px;
+    width: 187px;
+    font-family: "MyriadPro";
+    color: rgb(88, 70, 81);
+    float: left;
+}
+.comment {
+    position: absolute;
+    width: 13em;
+    top: 16px;
+    left: 80px;
+    font-size: 13px;
+    font-family: "MyriadPro";
+    color: rgb(119, 119, 119);
+    float: left;
+}
+.promo {
+    position: absolute;
+    width: 34px;
+    height: inherit;
+    right: 0;
+    background-image: url('img/header/promoCode.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.page {
+    position: relative;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    height: 3100px;
+    overflow: hidden;
+}
+.block1 {
+    position: relative;
+    width: 100%;
+    height: 560px;
+}
+.swiper-container {
+    width: 100%;
+    height: 440px;
+    margin: 20px 0 40px 0;
+}
+.swiper-slide {
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: width 0.3s;
+}
+.adresses-swiper .swiper-slide:hover {
+    width: 300px !important;
+}
+.hvr-trim:before {
+    border: white solid 2px;
+    top: 13px;
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+}
+.leftArrow {
+    z-index: 333;
+    position: absolute;
+    width: 2em;
+    top: 0;
+    height: 18.75em;
+    line-height: 18.75em;
+    background-image: url('img/block1/leftArrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.rightArrow {
+    z-index: 333;
+    position: absolute;
+    width: 2em;
+    right: 0;
+    top: 0;
+    height: 18.75em;
+    line-height: 18.75em;
+    background-image: url('img/block1/rightArrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.adressBlock {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#adress1 {
+    background-image: url('img/block1/pic1.png');
+    background-size: cover;
+}
+
+#adress2 {
+    background-image: url('img/block1/pic2.png');
+    background-size: cover;
+
+}
+#adress3 {
+    background-image: url('img/block1/pic3.png');
+    background-size: cover;
+}
+#adress4 {
+    background-image: url('img/block1/pic4.png');
+    background-size: cover;
+}
+#adress5 {
+    background-image: url('img/block1/pic5.png');
+    background-size: cover;
+}
+.metro {
+    position: absolute;
+    width: 100%;
+    /*top: 1em;*/
+    height: 1.5em;
+}
+#adress1 .metro {
+    top: 8em;
+    background-image: url('img/block1/pic1_fiolet_m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#adress2 .metro {
+    top: 4em;
+    background-image: url('img/block1/pic2_red_m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#adress3 .metro {
+    top: 8em;
+    background-image: url('img/block1/pic3_green_m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#adress4 .metro {
+    top: 8em;
+    background-image: url('img/block1/pic4_blue_m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#adress5 .metro {
+    top: 8em;
+    background-image: url('img/block1/pic4_blue_m.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.txt {
+    position: absolute;
+    top: 9em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.metro_txt {
+    position: absolute;
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.pointerButton {
+    position: absolute;
+    top: 3.5em;
+    width: 100%;
+    height: 3em;
+    background-image: url('img/block1/hand-pointer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#adress2 .txt {
+    top: 5em;
+}
+#adress2 .metro_txt {
+    height: 1em;
+    line-height: 1em;
+    top: 2em;
+}
+#adress2 .adress_txt {
+    position: absolute;
+    top: 2.4em;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+#adress2 .txt .linkToMap {
+    position: absolute;
+    top: 5.5em;
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-decoration: underline;
+    color: rgb(232, 247, 109);
+}
+.divideLine {
+    position: absolute;
+    top: 6em;
+    width: 100%;
+    height: 2px;
+    background-image: url("img/block1/divLine.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.phoneNumber {
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    top: 6.5em;
+    line-height: 1em;
+    font-size: 20px;
+}
+.time_txt{
+    position: absolute;
+    top: 11em;
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.buttonToAllShops {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 3em;
+    /*margin: 50px auto;*/
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("img/RedButton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255,255,255);
+}
+.block2 {
+    position: relative;
+    width: 100%;
+    height: 576px;
+    background-image: url("img/block2/Bg_2.png");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+.blockTitle {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: "MyriadPro";
+    color: rgb(88, 70, 81);
+}
+.table {
+    width: 996px;
+    height: 520px;
+    margin: 0px auto;
+    position: relative;
+}
+.Trow {
+    position: relative;
+    width: inherit;
+    height: 180px;
+}
+.Tcol {
+    position: relative;
+    width: 332px;
+    height: inherit;
+    float: left;
+}
+.salePercent {
+    font-size: 36px;
+    font-family: "MyriadPro";
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    width: 80px;
+    font-weight: bolder;
+    color: rgb(196, 218, 98);
+    vertical-align: top;
+}
+.salesTxt {
+    position: relative;
+    display: inline-block;
+    height: inherit;
+    width: 240px;
+}
+.saleTitle {
+    font-family: "MyriadPro";
+    text-align: left;
+    position: relative;
+    height: 44px;
+    width: 100%;
+    line-height: 22px;
+    font-weight: bolder;
+}
+a .saleTitle:hover {
+    color: rgb(196, 218, 98);
+}
+a .saleTitle:active {
+    color: rgb(50, 50, 50);
+}
+.saleDate {
+    font-family: "MyriadPro";
+    text-align: left;
+    position: relative;
+    text-transform: uppercase;
+    height: 32px;
+    line-height: 32px;
+    width: inherit;
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+}
+.saleText {
+    font-family: "MyriadPro";
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+    text-align: left;
+    position: relative;
+    height: 75px;
+    line-height: 28px;
+    width: 100%;
+}
+.block3 {
+    position: relative;
+    width: 100%;
+    height: 875px;
+}
+/*.block3 .table {*/
+    /*height: 530px;*/
+/*}*/
+.aboutText {
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    /* top: 4.5em; */
+    line-height: 30px;
+    height: 150px;
+    font-family: "MyriadPro";
+    color: rgb(50, 50, 50);
+}
+.catalog_txt {
+    font-size: 18px;
+    font-family: "MyriadPro";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.block3 .Trow {
+    position: relative;
+    width: inherit;
+    height: 250px;
+}
+.Tcol#children {
+    position: relative;
+    width: 664px;
+    height: 250px;
+}
+a .Tcol img {
+    width: 310px;
+    height: 230px;
+}
+#children img, #children .textbox {
+    width: 643px;
+    height: 230px;
+}
+.textbox:hover {
+    opacity:1;
+}
+.catalog_txt {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 9em;
+    color: white;
+}
+.addSign {
+    position: relative;
+    top: 50px;
+    width: 100%;
+    height: 40px;
+    background-image: url("img/block3/hover_sign.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.textbox {
+    width: 310px;
+    height: 230px;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    border-radius:5px;
+    background-color: rgba(0,0,0,0.75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.block4 {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+.brands {
+    position: relative;
+    width: 100%;
+    height: inherit;
+}
+.brand-swiper img {
+    height: 50px;
+    opacity: 0.3;
+}
+.block4 .swiper-container {
+    margin: 0;
+    height:inherit;
+}
+.block4 .swiper-slide {
+    width: auto;
+}
+.block4 .swiper-slide:hover img {
+    opacity: 1;
+    transition: opacity 0.3;
+}
+.block4 .leftArrow {
+    opacity: 0.3;
+    background-image: url("img/block4/leftArrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+    left: -7px;
+}
+.block4 .rightArrow {
+    opacity: 0.3;
+    background-image: url("img/block4/rightArrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 100%;
+    right: -7px;
+}
+.block4 .leftArrow:hover, .block4 .rightArrow:hover {
+    opacity: 1;
+}
+.block5 {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url("img/block2/Bg_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.block5 .blockTitle {
+    position: relative;
+    line-height: 6;
+}
+.block5 .aboutText {
+    height: 100px;
+}
+.block .Tcol {
+    padding: 24px;
+    position: relative;
+    width: 332px;
+    height: 230px;
+    float: left;
+}
+.block5 .saleDate {
+    height: 44px;
+    line-height: 44px;
+}
+.block5 .saleTitle {
+    font-weight: bold;
+    line-height: 64px;
+    height: 64px;
+}
+.block5 .salesTxt {
+    position: relative;
+    display: inline-block;
+    height: 180px;
+    width: 280px;
+    line-height: inherit;
+}
+.block5 .saleText {
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    color: rgb(50, 50, 50);
+    height: 90px;
+    line-height: 36px;
+}
+.greenButton {
+    left: -60px;
+    font-size: 14px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 44px;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("img/block5/greenButton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+}
+.AllNewsButton {
+    font-size: 16px;
+    position: relative;
+    width: 100%;
+    height: 44px;
+    line-height: 3em;
+    left: -60px;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("img/block5/more.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.block5 .buttontext {
+    position: absolute;
+    text-transform: uppercase;
+    width: 105px;
+    top: 5px;
+    left: 54%;
+    font-size: 16px;
+    color: rgb(88, 70, 81);
+    border-bottom: 1px dashed rgb(88, 70, 81);
+    text-align: center;
+    height: 2em;
+    line-height: 2em;
+}
+.Footer {
+    position: absolute;
+    width: 100%;
+    height: 25em;
+    top: 168em;
+    background-image: url("img/footer/Bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.Footer .Trow {
+    position: relative;
+    width: 996px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.Footer .Tcol {
+    position: relative;
+    width: 300px;
+    height: 100%;
+    float: left;
+    margin-left: none;
+}
+.picTable {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    margin: 30px 0;
+}
+.picSmall {
+    position: relative;
+    display: block;
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+.hvr-glow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    border: 0 solid white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: border;
+    transition-property: border;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+    box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.8);
+    border: 1px solid white;
+}
+
+.shadow-icon {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.shadow-icon:hover, .shadow-icon:focus, .shadow-icon:active {
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.8);
+}
+
+.FmenuLeft, .FmenuRight {
+    position: relative;
+    float: left;
+    height: 240px;
+    width: 120px;
+    margin: 5px;
+}
+.Flinks {
+    position: relative;
+    display: block;
+    height: 41px;
+    width: 120px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.Footer a, .Footer a:visited{
+    text-decoration: none;
+    color: white;
+}
+.Footer a.active, .Footer a:hover  {
+    color: rgb(196, 218, 98);
+    text-decoration: none;
+}
+.copyright {
+    position: relative;
+    float: left;
+    display: block;
+    height: 16px;
+    width: 270px;
+    color: white;
+    font-size: 12px;
+}
+.Footer .phone {
+    width: 230px;
+    height: 45px;
+    top: 36px;
+    left: 162px;
+}
+.Footer .phone img {
+    top: 0;
+}
+.Footer .number {
+    color: rgb(196, 218, 98);
+}
+.Footer .comment {
+    width: 13em;
+    top: 29px;
+    left: 72px;
+    color: lightgrey;
+}
+.workTimeLarge {
+    position: absolute;
+    display: inline;
+    left: 180px;
+    top: 95px;
+    width: 209px;
+    height: 64px;
+    color: white;
+    font-size: 30px;
+    text-align: right;
+}
+.workTimeSmall {
+    position: absolute;
+    display: inline;
+    left: 180px;
+    top: 165px;
+    width: 209px;
+    height: 64px;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+}
+.Razvitie {
+    position: absolute;
+    height: 29px;
+    width: 224px;
+    top: 265px;
+    left: 20px;
+}
+.VK {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 255px;
+    left: 300px;
+}
+.Google {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 255px;
+    left: 350px;
+}
+.Footer .Tcol:last-child {
+    position: relative;
+    width: 390px;
+    height: 100%;
+    float: left;
+    margin-left: none;
+}
+
+.picksmall img:hover {
+    box-shadow: 2px 2px black;
+}

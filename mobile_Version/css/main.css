@@ -1,0 +1,340 @@
+@font-face {
+    font-family: "MyriadPro";
+    src: url("MyriadPro.otf");
+}
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "MyriadPro";
+}
+
+
+/*.example {*/
+    /*opacity:0.5;*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left:0;*/
+    /*width: 100%;*/
+    /*height:285em;*/
+    /*overflow-x: hidden;*/
+    /*overflow-y: scroll;*/
+    /*background-image: url('page.png');*/
+    /*background-repeat-x: no-repeat;*/
+/*}*/
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1C1C1C;
+    height: 3em;
+    width:100%;
+}
+.menu {
+    position: relative;
+    width: 3em;
+    background-image: url('img/header/menuSign.svg');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.logo {
+    position: relative;
+    width: 6em;
+    background-image: url('img/header/Logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.phone {
+    position: relative;
+    width: 3em;
+    background-image: url('img/header/Phone.png');
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.page{
+    position: absolute;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    height: 282em;
+    overflow-x: hidden;
+    overflow-y: scroll;;
+    /*background-image: url('page.png');*/
+    /*background-repeat-x: no-repeat;*/
+    /* background-color: mediumaquamarine; */
+}
+
+.first-page {
+    position: relative;
+    /*opacity: 0.3;*/
+    width: 100%;
+    height: 32.5em;
+    background-image: url('img/page1/FirstPagePic.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.navigation-arrows {
+    position: relative;
+    height: 100%;
+}
+.leftArrow {
+    position: relative;
+    width: 3em;
+    top: 12em;
+    height: 4em;
+    background-image: url('img/leftArrow.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+.rightArrow {
+    position: relative;
+    width: 3em;
+    height: 4em;
+    top: 12em;
+    background-image: url('img/rightArrow.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.adressBlock {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.metro {
+    position: absolute;
+    width: 2em;
+    height: 1.5em;
+    top: 7.22em;
+    left: 6.7em;
+    background-image: url('img/page1/MetroSign.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.metro {
+    position: absolute;
+    width: 2em;
+    height: 1.5em;
+    top: 7.22em;
+    left: 6.7em;
+    background-image: url('img/page1/MetroSign.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.txt{
+    position: absolute;
+    top: 9em;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.metro_txt {
+    position: absolute;
+    top: 0.2em;
+    /*color: white;*/
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.adress_txt {
+    position: absolute;
+    top: 1.4em;
+    left: 0.1em;
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.adressBlock .txt .linkToMap {
+    position: absolute;
+    top: 4em;
+    font-size: 14px;
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-decoration: underline;
+    color: rgb(232, 247, 109);
+}
+.divideLine {
+    position: absolute;
+    top: 5.8em;
+    width: 100%;
+    height: 2px;
+    background-image: url("img/page1/divLine.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.phoneNumber {
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    top: 5.65em;
+    line-height: 1em;
+    font-size: 20px;
+}
+.time_txt{
+    position: absolute;
+    top: 9.8em;
+    /*color: white;*/
+    font-size: 14px;
+
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+}
+.page_counter{
+    position: absolute;
+    bottom: 6.5em;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 22.56px rgba(0, 0, 0, 0.53);
+
+
+}
+.chosenAdressNumber {
+    display: inline-block;
+    height: 1.2em;
+    line-height: 1.2em;
+    font-size: 20px;
+}
+.allAdressNumber {
+    display: inline-block;
+    height: 1.2em;
+    line-height: 1.2em;
+    font-size: 16px;
+}
+.buttonToAllShops {
+    position: relative;
+    top: 22em;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("img/RedButton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255,255,255);
+}
+.second-page {
+    position: absolute;
+    opacity: 0.3;
+    width: 100%;
+    height: 32.5em;
+    top: 33.5em;
+    background-image: url("img/page2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.headerSecond {
+    width: 100%;
+    font-size: 32px;
+    color: rgb(88, 70, 81);
+    text-align: center;
+    position: absolute;
+    height: 1em;
+    line-height: 1em;
+    top: 1.3em;
+    color: black;
+}
+.second-page .navigation-arrows{
+    top: 4em;
+}
+.second-page .leftArrow, .second-page .rightArrow {
+    top: 16em;
+    height: 3.5em;
+}
+.SalesTitle {
+    position: absolute;
+    display: block;
+    height: 2.5em;
+    top: 4.8em;
+    font-size: 19px;
+    line-height: 1.45em;
+}
+.SalesDate {
+    top: 11em;
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    height: 1em;
+    font-size: 14px;
+}
+.SalesInfo {
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    top: 12em;
+    line-height: 1.7em;
+    font-size: 15px;
+    text-align: left;
+}
+.SalesBlock {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.greenTitle {
+    position: absolute;
+    width: 100%;
+    height: 1em;
+    top: 1.4em;
+    left: 0.1em;
+    font-size: 36px;
+    color: rgb(196, 218, 98);
+    line-height: 1em;
+    text-align: left;
+}
+
+
+
+
+/* BEGIN SWIPER.JS*/
+.swiper-container {
+    width: 100%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: mediumaquamarine;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-pagination-bullet-active{
+    background: red !important;
+}
